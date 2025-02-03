@@ -1,0 +1,68 @@
+<html>
+<head>
+<title> KLF Registration</title>
+</head>
+<link rel="stylesheet"  href="stylesreg.css">
+<body>
+<form action="/action_page.php">
+<h1><center><b><u>Kerala Literature Festival Registration Form</b></u></center></h1>
+<h4><center><i>(Fill out the registration form on or before 21st February,2025)</center></i></h4>
+<h4><center><i>NO REGISTRATION FEE APPLICABLE</center></i></h4>
+<h4><center><i>(Exciting Events: Book signing by Authors, Interactive sessions with Authors, DC Book Store & Much more.)</center></i></h4>
+
+<hr>
+<h2>Name:</h2>
+<input type = "Text" id=name>
+
+<h2>D.O.B.:</h2>
+<input type = "Date">
+
+<h2>Age:</h2>
+<input type = "number">
+
+<h2>Gender:</h2>
+<input type="radio" name="gender" value="male" id=male > male
+<input type="radio" name="gender" value="female" id=male > female
+
+<h2>Phone No.:</h2>
+<input type = "number">
+
+<h2>Email ID:(Username)</h2>
+<input type = "email" id="user">
+
+<h2>Password:</h2>
+<input type = "password" id="pass">
+
+<h2>Name of Institution:</h2>
+<input type = "Text">
+
+
+<h2>Preffered Genre of Books:</h2>
+<select name="genre" id="genre">
+   <option value="Fiction">Fiction</option>
+   <option value="Poetry">Poetry</option>
+   <option value="History">History</option>
+   <option value="Autobiography">Autobiography</option>
+   <option value="Others">Others</option>
+</select>
+
+<br><hr>
+
+
+<button onclick="abc()"><a href="Log In Page Final.html">Submit</a></button>
+
+
+<script>
+function abc() 
+{
+let username = document.getElementById("user");
+localStorage.setItem("username",username.value);
+let password=document.getElementById("pass");
+localStorage.setItem("password",password.value);
+alert(localStorage.getItem("username"));
+alert(localStorage.getItem("password"));
+}
+</script>
+</form>
+
+

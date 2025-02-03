@@ -1,0 +1,7 @@
+body {background-color: pink;animation-name: example;animation-duration: 20s; animation-iteration-count:infinite;}
+
+@keyframes example{0% {background-color:pink; left:0px; top:0px;}25% {background-color:white; left:200px; top:0px;}50% {background-color:pink;left:200px;top:200px;}75% {background-color:white; left:0px; top:200px;}100% {background-color:pink; left:0px; top:0px;}}
+
+
+h1 {color :black;}p {color :red;}table, th, td {border:1px solid black; text-align: center;}
+
